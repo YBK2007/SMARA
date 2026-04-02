@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    scroll-behavior: smooth;
+  }
+  
+  /* NAV */
+  #navbar {
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+  }
+  
+  /* HERO */
+  .hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay h2 {
+    font-size: 4rem;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background: #c9a96e;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* SECTION */
+  .section {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .dark {
+    background: #111;
+    color: white;
+  }
+  
+  /* GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    padding: 30px;
+    background: #222;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* MAP */
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  
+  /* WHATSAPP FLOAT */
+  .wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  /* FOOTER */
+  footer {
+    padding: 20px;
+    background: black;
+    color: white;
+  }

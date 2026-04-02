@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smara Residence</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header id="navbar">
+  <div class="nav">
+    <h1>SMARA</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay">
+    <h2 id="heroTitle">Urban Sanctuary</h2>
+    <p id="heroText">Modern Living, Timeless Charm</p>
+    <button onclick="scrollToSection('about')">Explore</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section" data-aos="fade-up">
+  <h2>Welcome to Smara Boutique Residence</h2>
+  <p>Green living concept designed for modern families and community harmony.</p>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section dark">
+  <div class="grid">
+    <div class="card" data-aos="zoom-in">4 Bedrooms</div>
+    <div class="card" data-aos="zoom-in">3+2 Bathrooms</div>
+    <div class="card" data-aos="zoom-in">Office Room</div>
+    <div class="card" data-aos="zoom-in">2 Carport</div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="section" data-aos="fade-up">
+  <h2>Strategic Location</h2>
+  <iframe src="https://maps.google.com/maps?q=cilandak&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <h2>Contact Us</h2>
+  <button onclick="openWhatsApp()">Chat via WhatsApp</button>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="#" class="wa-float" onclick="openWhatsApp()">
+  💬
+</a>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Smara Residence</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+</body>
+</html>
