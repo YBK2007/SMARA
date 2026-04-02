@@ -1,55 +1,39 @@
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #0d0d0d;
+    font-family: 'Inter';
+    background: #0a0a0a;
     color: white;
-  }
-  
-  /* HEADER */
-  header {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-family: 'Playfair Display';
-    font-size: 24px;
-  }
-  
-  nav a {
-    margin-left: 20px;
-    color: white;
-    text-decoration: none;
   }
   
   /* HERO */
   .hero {
+    position: relative;
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   
-  .hero-content {
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
   }
   
-  .hero h1 {
+  h1 {
     font-family: 'Playfair Display';
-    font-size: 64px;
+    font-size: 70px;
   }
   
   button {
     padding: 12px 25px;
     background: linear-gradient(45deg,#c9a96e,#e6c07b);
     border: none;
-    color: black;
     cursor: pointer;
   }
   
@@ -63,36 +47,29 @@ body {
     background: #111;
   }
   
-  /* GRID */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 20px;
-  }
-  
-  .card {
-    padding: 40px;
-    background: #1a1a1a;
-    transition: 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  /* LIFESTYLE */
-  .lifestyle {
-    height: 60vh;
-    background: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c') center/cover;
+  /* IMAGE SECTIONS */
+  .image-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+  }
+  
+  .image-section img {
+    width: 50%;
+  }
+  
+  .image-section .text {
+    width: 50%;
+    padding: 50px;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
   }
   
   /* CTA */
   .cta {
-    padding: 80px;
     text-align: center;
+    padding: 100px;
     background: black;
   }
   
@@ -102,7 +79,7 @@ body {
     height: 300px;
   }
   
-  /* WA FLOAT */
+  /* WA */
   .wa {
     position: fixed;
     bottom: 20px;
