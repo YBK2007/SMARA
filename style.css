@@ -1,47 +1,55 @@
 body {
     margin: 0;
-    font-family: Arial;
-    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    background: #0d0d0d;
+    color: white;
   }
   
-  /* NAV */
-  #navbar {
+  /* HEADER */
+  header {
     position: fixed;
     width: 100%;
-    backdrop-filter: blur(10px);
-    background: rgba(0,0,0,0.6);
-    z-index: 999;
-  }
-  
-  .nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+  }
+  
+  nav a {
+    margin-left: 20px;
     color: white;
+    text-decoration: none;
   }
   
   /* HERO */
   .hero {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d') center/cover;
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .overlay {
+  .hero-content {
     text-align: center;
-    color: white;
   }
   
-  .overlay h2 {
-    font-size: 4rem;
+  .hero h1 {
+    font-family: 'Playfair Display';
+    font-size: 64px;
   }
   
   button {
     padding: 12px 25px;
-    background: #c9a96e;
+    background: linear-gradient(45deg,#c9a96e,#e6c07b);
     border: none;
+    color: black;
     cursor: pointer;
   }
   
@@ -53,24 +61,39 @@ body {
   
   .dark {
     background: #111;
-    color: white;
   }
   
   /* GRID */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 20px;
   }
   
   .card {
-    padding: 30px;
-    background: #222;
+    padding: 40px;
+    background: #1a1a1a;
     transition: 0.3s;
   }
   
   .card:hover {
     transform: translateY(-10px);
+  }
+  
+  /* LIFESTYLE */
+  .lifestyle {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* CTA */
+  .cta {
+    padding: 80px;
+    text-align: center;
+    background: black;
   }
   
   /* MAP */
@@ -79,22 +102,13 @@ body {
     height: 300px;
   }
   
-  /* WHATSAPP FLOAT */
-  .wa-float {
+  /* WA FLOAT */
+  .wa {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #25D366;
-    color: white;
     padding: 15px;
     border-radius: 50%;
-    font-size: 24px;
-    text-decoration: none;
-  }
-  
-  /* FOOTER */
-  footer {
-    padding: 20px;
-    background: black;
-    color: white;
+    cursor: pointer;
   }
