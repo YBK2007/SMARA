@@ -30,6 +30,12 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  font-family: 'Playfair Display';
+  font-size: 25px;
+  font-style: Italic;
+}
+
 /* SECTION */
 .section {
   padding: 80px 20px;
