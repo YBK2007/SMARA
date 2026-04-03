@@ -1,103 +1,111 @@
 body {
-    margin: 0;
-    font-family: 'Inter';
-    background: #0a0a0a;
-    color: white;
-  }
-  
-  /* HERO */
-  .hero {
-    position: relative;
-    height: 100vh;
-  }
-  
-  .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
+  margin: 0;
+  font-family: 'Inter';
+  background: #0a0a0a;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 50px;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.dark {
+  background: #111;
+}
+
+/* IMAGE SECTION */
+.image-section {
+  display: flex;
+  align-items: center;
+}
+
+.image-section img {
+  width: 50%;
+}
+
+.image-section .text {
+  width: 50%;
+  padding: 40px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* FULL IMAGE */
+.full-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* CTA */
+.cta {
+  padding: 80px;
+  text-align: center;
+  background: black;
+}
+
+/* BUTTON */
+button {
+  padding: 12px 25px;
+  background: linear-gradient(45deg,#c9a96e,#e6c07b);
+  border: none;
+}
+
+/* WA FLOAT */
+.wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
   h1 {
-    font-family: 'Playfair Display';
-    font-size: 50px;
+    font-size: 28px;
   }
-  
-  /* SECTION */
-  .section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  /* IMAGE SECTION */
+
   .image-section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
   }
-  
-  .image-section img {
-    width: 50%;
-  }
-  
+
+  .image-section img,
   .image-section .text {
-    width: 50%;
-    padding: 20px;
+    width: 100%;
   }
-  
-  .reverse {
-    flex-direction: row-reverse;
+
+  .hero {
+    height: 80vh;
   }
-  
-  /* CTA */
-  .cta {
-    padding: 60px;
-    text-align: center;
-    background: black;
-  }
-  
-  /* BUTTON */
-  button {
-    padding: 10px 20px;
-    background: #c9a96e;
-    border: none;
-  }
-  
-  /* WA FLOAT */
-  .wa {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    padding: 15px;
-    border-radius: 50%;
-  }
-  
-  /* 📱 MOBILE FIX (IMPORTANT) */
-  @media (max-width: 768px) {
-  
-    h1 {
-      font-size: 32px;
-    }
-  
-    .image-section {
-      flex-direction: column;
-    }
-  
-    .image-section img,
-    .image-section .text {
-      width: 100%;
-    }
-  
-    .hero {
-      height: 80vh;
-    }
-  
-  }
+}
