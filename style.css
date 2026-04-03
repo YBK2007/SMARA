@@ -48,6 +48,7 @@ h2 {
 
 /* IMAGE SECTION */
 .image-section {
+  gap: 20px;   /* ✅ control jarak */
   display: flex;
   align-items: center;
 }
@@ -56,11 +57,18 @@ h2 {
   width: 50%;
 }
 
-.image-section .text {
-  width: 50%;
-  padding: 40px;
-}
+@media (max-width: 768px) {
 
+  .image-section .text {
+    width: 100%;
+    text-align: center;   /* ✅ FIX CENTER */
+    padding: 20px;        /* ✅ FIX SPACING */
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+}
 .reverse {
   flex-direction: row-reverse;
 }
@@ -103,8 +111,8 @@ button {
   }
 
   .image-section {
-    flex-direction: column;
-  }
+    flex-direction: column;   /* ✅ biar rapi mobile */
+    gap: 10px;                /* ✅ lebih rapat */
 
   .image-section img,
   .image-section .text {
